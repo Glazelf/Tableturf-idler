@@ -11,12 +11,9 @@
     "url": "git+https://github.com/Glazelf/Tableturf-idler.git"
   },
   "author": "Glaze",
-  "license": "ISC",
+  "license": "",
   "bugs": {
     "url": "https://github.com/Glazelf/Tableturf-idler/issues"
   },
-  "homepage": "https://github.com/Glazelf/Tableturf-idler#readme",
-  "dependencies": {
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/Glazelf/Tableturf-idler#readme"
 }
