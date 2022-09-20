@@ -32,11 +32,16 @@ async function tableturfidler() {
             conn.write("click A \r\n");
             conn.write("click A \r\n");
             console.log(`Passed turn ${i + 1}.`);
-            await sleep(10000);
+            let turnSleepTime = 8000;
+            if (i > 8) turnSleepTime = 10000; // Account for late game specials
+            await sleep(turnSleepTime);
         };
         console.log("Waiting for results...");
         await sleep(5000);
         console.log("Look at all that EXP!");
+        conn.write("click A \r\n");
+        await sleep(2000);
+        // Extra A press to account for levelups? I hope?
         conn.write("click A \r\n");
         await sleep(10000);
         console.log("Restarting battle!");
