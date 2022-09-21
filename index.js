@@ -43,7 +43,7 @@ async function tableturfidler() {
         await sleep(2000);
         // Extra A press to account for levelups? I hope?
         conn.write("click A \r\n");
-        await sleep(8000);
+        await sleep(3000);
         console.log("Restarting battle!");
         conn.write("click A \r\n");
     };
